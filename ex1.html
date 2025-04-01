@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deixe seu comentário.</title>
+    <link rel="icon" type="image/x-icon" href="104090.png">
+    <style>
+              textarea {
+            overflow: scroll;
+        
+           
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+           
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 450px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Deixe um comentário </h1>
+    <hr style="height: 2px; background-color: #000000;">
+    </hr>
+    <form action="" method="">
+        <label for="name"><b>Nome:</b></label><br>
+        <input style="width: 50%;" type="text" id="name" required><br><br>
+
+        <label for="email"><b>Email:</b></label><br>
+        <input style="width: 50%;" type="email" id="email" required><br><br>
+
+        <label for="website"><b>Website:</b></label><br>
+        <input style="width: 50%;" type="text" id="website" required><br><br>
+
+
+        <label for="comment"><b>Comentário:</b></label><br>
+        <textarea id="comment" name="comment"></textarea><br><br>
+
+        <p><b>Observação: Seu comentário será publicado após passar pelo moderador. </b></p>
+        <input type="submit" value="Enviar Comentário">
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção</title>
+    <link rel="icon" type="image/x-icon" href="1160356.png">
+    <style>
+        textarea {
+            overflow: scroll;
+            resize: none;
+           
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+           
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 450px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+   <form action="">
+    <h3><b>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</b></h3>
+    <label style="padding-right: 7.5% ;" for="login"><b>Login:</b></label>
+    <input type="text" id="login" required placeholder="Insira seu Login"><br><br>
+
+    <label style="padding-right: 7.5% ;" for="senha"><b>Senha:</b></label>
+    <input type="password" id="senha" required placeholder="Insira sua Senha"><br><br>
+
+    <label style="padding-right: 8% ;" for="Status"><b>Status</b></label>
+    <select name="Status" id="Status">
+        <option>Inativo</option>
+        <option>Ativo</option>
+
+    </select><br><br>
+    <label style="padding-right: 8% ;" for="Tipo"><b>Tipo:</b></label>
+
+
+
+    <input type="radio" name="Tipo" id="Técnico" required>
+    <label for="Técnico"><b>Técnico</b></label>
+    <input type="radio" name="Tipo" id="Professor"required>
+    <label for="Professor"><b>Professor</b></label>
+    <input type="radio" name="Tipo" id="Aluno" required>
+    <label for="Aluno"><b>Aluno</b></label> <br><br>
+
+    <label style="padding-right: 5% ;" for="datac"><b>Data Criação</b></label>
+    <input type="date" id="datac" required /><br><br>
+
+    <label style="padding-right: 7.5% ;" for="Tipo"><b>Perfil:</b></label>
+
+
+
+    <input type="radio" name="tipo2" id="Convidado" required>
+    <label for="Convidado"><b>Convidado</b></label>
+    <input type="radio" name="tipo2" id="Administrador" required>
+    <label for="Administrador"><b>Administrador</b></label><br><br>
+    
+    <div style="display: flex; align-items: center;">
+        <label  style="padding-right: 35px;" for="Obs"><b>Observações:</b></label>
+        <textarea  name="Obs" id="Obs" style="width: 50%; height: 200px;"></textarea>
+       
+    </div>
+<br>
+
+ 
+
+<label style="display: flex; align-items: center;"><b>Módulos:</b></label>
+<b><input type="checkbox" name="com" id="com">
+<label  for="com">Compras</label>
+
+<input  type="checkbox" name="bli" id="bli" required>
+<label   for="bli">Blibioteca</label>
+
+<input type="checkbox" name="ac" id="ac" required>
+<label   for="ac">Académico</label><br>
+
+<input  type="checkbox" name="doc" id="doc" required>
+<label  for="doc">Documentação</label>
+
+<input type="checkbox" name="RH" id="RH" required>
+<label for="RH">Recusos humanos</label><br><br></b>
+
+<input type="submit" value="Enviar"/>
+<input type="reset" value="Excluir"/>
+
+
+
+
+
+
+
+   </form>
+
+
+
+
+
+
+</body>
+
+</html>
